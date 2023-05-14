@@ -1,10 +1,6 @@
 const bell = (input) => {
   process.stdout.write("\x07");
-  if (input.length === 0) {
-    //Do nothing
-  } else {
-    setTimeout(bell, input.shift() * 1000, input);
-  }
+  setTimeout(bell, input.shift() * 1000, input);
 };
 
 const check = (input) => {
